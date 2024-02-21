@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedMart | Login</title>
+
+    <!-- Font Awesome Link  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/CSS/Styles.css" />
+    <!-- Favicon Link -->
+    <link
+      rel="shortcut icon"
+      href="/Images/MedMart.png"
+      type="image/x-icon" />
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- google fonts -->
+    <!-- Monserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet" />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="/JavaScript/index.js"></script>
+  </head>
+  <body>
+    <!-- loader  -->
+    <div id="preloader">
+      <img src="/Images/final-loader.gif" alt="Loading..." />
+    </div>
+    <!-- Navigation bar  -->
+    <section id="title" class="navbar-colour">
+      <!-- Nav bar -->
+      <nav class="navbar navbar-expand-lg nav-font-color fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <div class="container logo">
+            <a class="navbar-brand" href="#">
+              <img class="logo" src="/Images/Logo/logo1.png" alt="Bootstrap" />
+            </a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse container-fluid"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link "
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/src/about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/src/blog.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Download
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#download"
+                      ><i class="fa-brands fa-google-play fa-lg"></i
+                      ><em> Android</em></a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#download"
+                      ><i class="fa-brands fa-apple fa-lg"></i> <em> iOS</em></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a class="navbar-layout active" href="/src/login.html">
+              <button type="button btn" class="btn btn-outline-primary">
+                <i class="fa-solid fa-right-to-bracket fa-lg"></i>
+              </button>
+            </a>
+            <a class="navbar-layout" href="/src/profile.html"
+              ><button type="button btn" class="btn btn-outline-primary">
+                <i class="fa-solid fa-user fa-lg"></i></button
+            ></a>
+            <a class="navbar-layout" href="/src/cart.html">
+              <button type="button btn " class="btn btn-outline-primary">
+                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- ----------------------------------------------------------------------------------------------------------- -->
+      <!-- bootstrap js -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+    </section>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+    <!-- login -->
+    <section id="login">
+      <div class="login-page bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <h3 class="mb-3">Login Now</h3>
+              <div class="bg-white shadow rounded">
+                <div class="row">
+                  <div class="col-md-7 pe-0">
+                    <div class="form-left h-100 py-5 px-5">
+                      <form action="" class="row g-4">
+                        <div class="col-12">
+                          <label
+                            >Username<span class="text-danger">*</span></label
+                          >
+                          <div class="input-group">
+                            <div class="input-group-text">
+                              <i class="fa-solid fa-user"></i>
+                            </div>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Enter Username" />
+                          </div>
+                        </div>
+
+                        <div class="col-12">
+                          <label
+                            >Password<span class="text-danger">*</span></label
+                          >
+                          <div class="input-group">
+                            <div class="input-group-text">
+                              <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <input
+                              type="password"
+                              class="form-control"
+                              placeholder="Enter Password" />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="inlineFormCheck" />
+                            <label
+                              class="form-check-label"
+                              for="inlineFormCheck"
+                              >Remember me</label
+                            >
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <a href="#" class="float-end text-primary a-login"
+                            >Forgot Password?</a
+                          >
+                        </div>
+
+                        <div class="col-12">
+                          <button
+                            type="submit"
+                            class="btn btn-primary px-4 float-end mt-4">
+                            Login
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-5 ps-0 d-none d-md-block">
+                    <div class="form-right h-100 text-white text-center pt-5">
+                      <i class="bi bi-bootstrap"></i>
+                      <h2 class="fs-1">Welcome Back!!!</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>MedMart</h3>
+            <p>
+              123 Vazirabad<br />
+              Nanded, Maharashtra 12345<br />
+              Phone: 555-123-4567<br />
+              Email: info@MedMart.com
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3>Connect with us</h3>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-sm footer-icon fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+            <br />
+            <h3 id="download">Download</h3>
+            <ul class="social-icons">
+              <li>
+                <img src="/Images/images-appStore.svg" alt="app_store" />
+              </li>
+              <li>
+                <img src="/Images/images-googlePlay.svg" alt="google_play" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="payment-heading">Payment Partners</h3>
+            <ul class="payment">
+              <li>
+                <img src="/Images/payment/images-amazon.png" alt="amazon-pay" />
+              </li>
+              <li>
+                <img src="/Images/payment/images-gpay.png" alt="gpay-pay" />
+              </li>
+              <li>
+                <img src="/Images/payment/images-paytm.png" alt="paytm" />
+              </li>
+              <li>
+                <img src="/Images/payment/images-phonepe.png" alt="phonepe" />
+              </li>
+              <li>
+                <img src="/Images/payment/images-rupay.png" alt="rupay" />
+              </li>
+              <li>
+                <img src="/Images/payment/images-visa.png" alt="visa" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="copyright">&copy; 2023 MedMart. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+  </body>
+</html>
